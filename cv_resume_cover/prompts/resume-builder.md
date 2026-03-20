@@ -4,7 +4,9 @@
 >
 > **What it needs:** An [Experience Profile](../schema/experience-profile-template.yaml) (YAML file) — created using the [Experience Capture prompt](experience-capture.md) — and a target job description.
 >
-> **What it produces:** A tailored, one-page resume optimized for applicant tracking systems.
+> **What it produces:** A tailored, one-page resume optimized for applicant tracking systems (ATS).
+>
+> **What is ATS?** Applicant Tracking Systems are software that companies use to filter resumes before a human ever sees them. They scan for keywords, standard formatting, and relevant experience. If your resume isn't ATS-friendly, it may be rejected automatically — even if you're a great fit.
 
 ---
 
@@ -44,6 +46,14 @@ RULES:
    d. Identify any GAPS — requirements the user doesn't clearly meet.
       Suggest how to address them (transferable skills, reframing, or honest
       omission).
+   e. TIMELINE CHECK — review the user's experience dates for any gaps longer
+      than 6 months. If found, flag them and ask the user how they'd like to
+      address them (education, personal projects, travel, etc.).
+   f. CAREER PIVOT CHECK — if the user's background doesn't directly match the
+      target role's industry or function, identify transferable skills and
+      suggest bridge narratives. Example: philosophy thesis → analytical
+      writing and stakeholder communication; tutoring → training and
+      knowledge transfer.
 
 2. RESUME STRUCTURE
    Use this format:
@@ -67,11 +77,18 @@ RULES:
    - Most recent first
    - Only include experiences relevant to this role (not everything)
    - For each entry:
-     • Title — Organization | Dates
-     • 2-4 bullet points using the XYZ formula:
-       "Accomplished [X] by doing [Y], resulting in [Z]"
+     • Title — Organization | Dates (use Mon YYYY format, e.g., Jan 2024)
+     • 2-4 bullet points. Choose the best formula for each bullet:
+       - XYZ (best for quantitative results):
+         "Accomplished [X] by doing [Y], resulting in [Z]"
+       - CAR (best for qualitative or complex work):
+         "Faced [Challenge], took [Action], achieved [Result]"
+       - Narrative (best for research, writing, teaching):
+         "[Action verb] [what you did], [artifact or qualitative outcome]"
      • Start every bullet with a strong action verb
-     • Include metrics from the profile wherever possible
+     • Include metrics when available, but qualitative outcomes are valid:
+       "Published peer-reviewed paper", "Presented findings to stakeholders",
+       "Improved team onboarding process"
      • Weave in job description keywords naturally
    
    EDUCATION
@@ -83,6 +100,8 @@ RULES:
    
    OPTIONAL SECTIONS (include only if they strengthen the application)
    - Projects (if relevant and the user lacks work experience)
+   - Publications (if the role values research or writing)
+   - Awards & Honors (if they signal relevant achievement)
    - Languages (if the job values multilingual candidates)
 
 3. ATS OPTIMIZATION RULES
@@ -90,15 +109,19 @@ RULES:
      creative alternatives)
    - No tables, columns, graphics, or special characters
    - Use plain text formatting that survives ATS parsing
+   - Use standard dashes (-) not em-dashes (—) in the resume body
    - Mirror the job description's language — if they say "project management",
      don't write "managing projects"
    - Include both spelled-out terms and acronyms: "Search Engine Optimization
      (SEO)"
+   - ALL dates must use "Mon YYYY" format (e.g., Jan 2024 - Present)
 
 4. EIC-SPECIFIC GUIDANCE
    - If the user has limited work experience, elevate projects, internships,
-     and coursework — they count
-   - Reframe academic or volunteer work using professional language
+     coursework, teaching, fieldwork, and thesis work — they count
+   - Reframe academic, volunteer, or non-traditional work using professional
+     language (e.g., "thesis defense" → "presented research findings to
+     faculty panel", "tutoring" → "provided individualized instruction")
    - Don't pad or exaggerate — honesty is non-negotiable
    - If the user is underqualified for the role, say so gently and suggest
      what kind of role might be a better current fit
@@ -110,7 +133,9 @@ RULES:
    - Consistent tense: past tense for completed roles, present for current
 
 6. AFTER GENERATING THE RESUME
-   a. Present the resume in a clean, copy-pasteable format
+   a. Present the resume in PLAIN TEXT first (for pasting into application
+      portals and ATS compatibility), then offer a markdown version for
+      PDF export
    b. Show a "keyword match score":
       - List the top 10 job keywords
       - Mark which ones appear in the resume ✅ and which don't ❌
@@ -119,12 +144,11 @@ RULES:
       - Emphasize a different experience
       - Add or remove a section
       - Adjust the summary for a different angle
+      - Reframe an experience for a career pivot
       - Make it shorter / more detailed"
-   d. Offer to produce a plain-text version (for pasting into application
-      portals) and a formatted version (for PDF export)
 
-OUTPUT FORMAT: Use markdown. The user will copy it into their preferred
-document editor for final formatting.
+OUTPUT FORMAT: Provide the plain-text version first (ATS-safe), followed by
+a markdown version (for formatting in a document editor).
 ```
 
 ---

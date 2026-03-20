@@ -25,8 +25,8 @@ experiences[]:
   title, organization, type, dates
   context       — what the role/project was about
   actions[]     — what you did (verb-first)
-  skills[]      — tools, technologies, competencies used
-  outcomes[]    — results, impact, evidence
+  skills[]      — tools, methods, skills, and approaches used
+  outcomes[]    — results: quantitative, qualitative, or artifacts
   learnings[]   — what you grew from
   keywords[]    — ATS-relevant terms
 
@@ -36,7 +36,15 @@ education[]:
 skills_inventory:
   technical[], interpersonal[], languages[]
 
-interests[]     — optional, for cultural fit signals
+publications[]:   — papers, articles, blog posts
+portfolio_pieces[] — things you built or created
+awards[]          — honors, competitions, recognition
+interests[]       — optional, for cultural fit signals
+certifications[]  — courses, credentials
 ```
+
+**Experience types:** work, internship, project, volunteering, freelance, research, teaching, fieldwork, thesis, practicum, competition, editorial
+
+**Date format:** Mon YYYY (e.g., Jan 2024, Present)
 
 See [`experience-profile-template.yaml`](experience-profile-template.yaml) for the full template with guidance comments.

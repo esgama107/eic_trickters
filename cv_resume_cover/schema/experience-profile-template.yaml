@@ -5,10 +5,12 @@
 # Fill it in using the Experience Capture prompt kit, or manually.
 #
 # Rules:
-#   - Be specific and factual (numbers, tools, outcomes)
-#   - Use action verbs ("designed", "implemented", "led")
+#   - Be specific and factual (numbers, tools, outcomes when available)
+#   - Use action verbs ("designed", "implemented", "led", "analyzed",
+#     "facilitated", "authored", "researched", "taught")
 #   - Don't self-censor — include everything; tailoring happens later
 #   - Add new experiences at the top of the list (most recent first)
+#   - Outcomes can be quantitative OR qualitative — both matter
 # =============================================================================
 
 profile:
@@ -30,6 +32,7 @@ profile:
 # activity. Include EVERYTHING — the resume builder will select what fits.
 #
 # type: work | internship | project | volunteering | freelance | research
+#        teaching | fieldwork | thesis | practicum | competition | editorial
 # =============================================================================
 
 experiences:
@@ -37,8 +40,9 @@ experiences:
   - title: ""                 # Your role or title
     organization: ""          # Company, university, org, or "Personal Project"
     type: ""                  # work | internship | project | volunteering | freelance | research
-    start_date: ""            # YYYY-MM (e.g., 2024-01)
-    end_date: ""              # YYYY-MM or "present"
+                              # teaching | fieldwork | thesis | practicum | competition | editorial
+    start_date: ""            # Mon YYYY (e.g., Jan 2024)
+    end_date: ""              # Mon YYYY or "Present"
     location: ""              # City, Country or "Remote"
 
     # What was this role/project about? 1-2 sentences of context.
@@ -48,12 +52,17 @@ experiences:
     actions:
       - ""
 
-    # Tools, technologies, frameworks, methodologies you used.
+    # Tools, methods, skills, and approaches you used.
+    # Examples: software, lab equipment, research methods, frameworks, writing
+    # styles, facilitation techniques, analytical approaches.
     skills:
       - ""
 
-    # Measurable results, impact, or deliverables.
-    # Use numbers when possible: "reduced load time by 40%", "served 200+ users".
+    # Results, impact, or artifacts produced.
+    # Quantitative when possible: "reduced load time by 40%", "served 200+ users"
+    # Qualitative is equally valid: "published peer-reviewed paper",
+    #   "improved team onboarding process", "presented findings to faculty",
+    #   "received departmental recognition".
     outcomes:
       - ""
 
@@ -73,8 +82,8 @@ education:
 
   - degree: ""                # e.g., "B.S. Computer Science"
     institution: ""
-    start_date: ""
-    end_date: ""              # or "expected YYYY-MM"
+    start_date: ""            # Mon YYYY
+    end_date: ""              # Mon YYYY or "Expected Mon YYYY"
     location: ""
     gpa: ""                   # Optional — include if strong or required
     highlights:               # Relevant coursework, honors, thesis, activities
@@ -87,15 +96,42 @@ education:
 
 skills_inventory:
 
-  technical:                  # Programming languages, tools, frameworks, platforms
-    - ""
+  technical:                  # Tools, software, methods, frameworks, platforms
+    - ""                      # e.g., Python, SPSS, Figma, MATLAB, qualitative coding,
+                              #       GIS, LaTeX, laboratory techniques, survey design
 
-  interpersonal:              # Leadership, communication, teamwork, etc.
+  interpersonal:              # Leadership, communication, teamwork, facilitation, etc.
     - ""
 
   languages:                  # Spoken/written languages and proficiency
     - language: ""
       proficiency: ""         # native | fluent | professional | conversational | basic
+
+# =============================================================================
+# PUBLICATIONS & PORTFOLIO (optional)
+# =============================================================================
+# Academic papers, articles, blog posts, creative works, or portfolio pieces.
+
+publications:
+  - title: ""
+    venue: ""                 # Journal, conference, blog, publication name
+    date: ""                  # Mon YYYY
+    url: ""                   # Link (optional)
+    role: ""                  # e.g., "first author", "co-author", "contributor"
+
+portfolio_pieces:
+  - title: ""
+    description: ""           # 1 sentence — what it is and why it matters
+    url: ""                   # Link to the work (optional)
+
+# =============================================================================
+# AWARDS & COMPETITIONS (optional)
+# =============================================================================
+
+awards:
+  - title: ""                 # e.g., "Dean's List", "Best Paper Award", "Hackathon Winner"
+    issuer: ""                # Organization or event that granted it
+    date: ""                  # Mon YYYY
 
 # =============================================================================
 # INTERESTS (optional)
@@ -112,5 +148,5 @@ interests:
 certifications:
   - name: ""
     issuer: ""
-    date: ""
+    date: ""                  # Mon YYYY
     url: ""                   # Verification link (optional)

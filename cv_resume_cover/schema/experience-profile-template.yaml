@@ -1,0 +1,116 @@
+# =============================================================================
+# Experience Profile — Portable Template
+# =============================================================================
+# This file is your canonical source of professional experiences.
+# Fill it in using the Experience Capture prompt kit, or manually.
+#
+# Rules:
+#   - Be specific and factual (numbers, tools, outcomes)
+#   - Use action verbs ("designed", "implemented", "led")
+#   - Don't self-censor — include everything; tailoring happens later
+#   - Add new experiences at the top of the list (most recent first)
+# =============================================================================
+
+profile:
+  name: ""                    # Full name
+  email: ""                   # Professional email
+  phone: ""                   # Optional
+  location: ""                # City, Country (or "Remote")
+  linkedin: ""                # LinkedIn URL (optional)
+  portfolio: ""               # Website / GitHub / portfolio (optional)
+
+  # 2-3 sentence professional summary — updated as your profile evolves.
+  # Focus on: who you are, what you do, what value you bring.
+  summary: ""
+
+# =============================================================================
+# EXPERIENCES
+# =============================================================================
+# Each entry is one role, project, internship, volunteering, or significant
+# activity. Include EVERYTHING — the resume builder will select what fits.
+#
+# type: work | internship | project | volunteering | freelance | research
+# =============================================================================
+
+experiences:
+
+  - title: ""                 # Your role or title
+    organization: ""          # Company, university, org, or "Personal Project"
+    type: ""                  # work | internship | project | volunteering | freelance | research
+    start_date: ""            # YYYY-MM (e.g., 2024-01)
+    end_date: ""              # YYYY-MM or "present"
+    location: ""              # City, Country or "Remote"
+
+    # What was this role/project about? 1-2 sentences of context.
+    context: ""
+
+    # What did YOU do? Use action verbs. One action per line.
+    actions:
+      - ""
+
+    # Tools, technologies, frameworks, methodologies you used.
+    skills:
+      - ""
+
+    # Measurable results, impact, or deliverables.
+    # Use numbers when possible: "reduced load time by 40%", "served 200+ users".
+    outcomes:
+      - ""
+
+    # What did you learn or how did you grow from this experience?
+    learnings:
+      - ""
+
+    # ATS-relevant keywords — terms a recruiter or system might search for.
+    keywords:
+      - ""
+
+# =============================================================================
+# EDUCATION
+# =============================================================================
+
+education:
+
+  - degree: ""                # e.g., "B.S. Computer Science"
+    institution: ""
+    start_date: ""
+    end_date: ""              # or "expected YYYY-MM"
+    location: ""
+    gpa: ""                   # Optional — include if strong or required
+    highlights:               # Relevant coursework, honors, thesis, activities
+      - ""
+
+# =============================================================================
+# SKILLS INVENTORY
+# =============================================================================
+# Comprehensive list — the resume builder will pick what's relevant.
+
+skills_inventory:
+
+  technical:                  # Programming languages, tools, frameworks, platforms
+    - ""
+
+  interpersonal:              # Leadership, communication, teamwork, etc.
+    - ""
+
+  languages:                  # Spoken/written languages and proficiency
+    - language: ""
+      proficiency: ""         # native | fluent | professional | conversational | basic
+
+# =============================================================================
+# INTERESTS (optional)
+# =============================================================================
+# Hobbies, causes, communities — useful for cultural fit and conversation starters.
+
+interests:
+  - ""
+
+# =============================================================================
+# CERTIFICATIONS & COURSES (optional)
+# =============================================================================
+
+certifications:
+  - name: ""
+    issuer: ""
+    date: ""
+    url: ""                   # Verification link (optional)

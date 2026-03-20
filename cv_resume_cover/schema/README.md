@@ -19,31 +19,36 @@ It is designed to be:
 
 ```
 profile:
-  name, contact, summary
+  name, contact, summary, work_authorization
 
 experiences[]:
-  title, organization, type, dates
+  title, organization, type, scope, dates
   context       — what the role/project was about
   actions[]     — what you did (verb-first)
   skills[]      — tools, methods, skills, and approaches used
   outcomes[]    — results: quantitative, qualitative, or artifacts
   learnings[]   — what you grew from
   keywords[]    — ATS-relevant terms
+  supervised_hours — total, type, supervisor_title (clinical/practicum)
+  populations_served — who you served or worked with
+  client        — for freelance or consulting work
 
 education[]:
   degree, institution, dates, highlights
 
 skills_inventory:
-  technical[], interpersonal[], languages[]
+  technical[]   — supports optional proficiency levels (basic → expert)
+  interpersonal[], languages[]
 
 publications[]:   — papers, articles, blog posts
 portfolio_pieces[] — things you built or created
 awards[]          — honors, competitions, recognition
 interests[]       — optional, for cultural fit signals
 certifications[]  — courses, credentials
+licensure[]       — legally required licenses (nursing, teaching, etc.)
 ```
 
-**Experience types:** work, internship, project, volunteering, freelance, research, teaching, fieldwork, thesis, practicum, competition, editorial
+**Experience types:** work, internship, project, volunteering, freelance, research, teaching, fieldwork, thesis, practicum, competition, editorial, exhibition
 
 **Date format:** Mon YYYY (e.g., Jan 2024, Present)
 

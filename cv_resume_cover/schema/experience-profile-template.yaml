@@ -25,6 +25,10 @@ profile:
   # Focus on: who you are, what you do, what value you bring.
   summary: ""
 
+  # Optional — important for international students and cross-border applicants.
+  work_authorization: ""      # e.g., "US Citizen", "OPT (valid through Dec 2026)",
+                              #       "Requires sponsorship", "EU work permit"
+
 # =============================================================================
 # EXPERIENCES
 # =============================================================================
@@ -33,6 +37,7 @@ profile:
 #
 # type: work | internship | project | volunteering | freelance | research
 #        teaching | fieldwork | thesis | practicum | competition | editorial
+#        exhibition
 # =============================================================================
 
 experiences:
@@ -41,6 +46,9 @@ experiences:
     organization: ""          # Company, university, org, or "Personal Project"
     type: ""                  # work | internship | project | volunteering | freelance | research
                               # teaching | fieldwork | thesis | practicum | competition | editorial
+                              # exhibition
+    scope: ""                 # Optional — scale of the experience:
+                              # course_project | semester | multi_year | funded | independent
     start_date: ""            # Mon YYYY (e.g., Jan 2024)
     end_date: ""              # Mon YYYY or "Present"
     location: ""              # City, Country or "Remote"
@@ -74,6 +82,20 @@ experiences:
     keywords:
       - ""
 
+    # For clinical, practicum, or supervised experiences — track hours.
+    # Leave blank for non-supervised roles.
+    supervised_hours:
+      total: ""               # e.g., "500", "1200"
+      type: ""                # clinical | practicum | fieldwork | student_teaching
+      supervisor_title: ""    # e.g., "Licensed Clinical Psychologist", "RN Preceptor"
+
+    # Who did you serve or work with? Important for education, health, social work.
+    populations_served: ""    # e.g., "pediatric patients", "Title I K-3 students",
+                              #       "adults with developmental disabilities"
+
+    # For freelance, consulting, or client-based work.
+    client: ""                # e.g., "Local bakery rebrand", "3 small business websites"
+
 # =============================================================================
 # EDUCATION
 # =============================================================================
@@ -97,8 +119,11 @@ education:
 skills_inventory:
 
   technical:                  # Tools, software, methods, frameworks, platforms
-    - ""                      # e.g., Python, SPSS, Figma, MATLAB, qualitative coding,
-                              #       GIS, LaTeX, laboratory techniques, survey design
+    - ""                      # Simple format: just list the skill name
+                              # Detailed format (optional):
+                              #   - skill: "Python"
+                              #     proficiency: "intermediate"
+                              # Levels: basic | intermediate | advanced | expert
 
   interpersonal:              # Leadership, communication, teamwork, facilitation, etc.
     - ""
@@ -150,3 +175,18 @@ certifications:
     issuer: ""
     date: ""                  # Mon YYYY
     url: ""                   # Verification link (optional)
+
+# =============================================================================
+# LICENSURE (for regulated professions)
+# =============================================================================
+# Licenses are legally required for employment in fields like nursing, teaching,
+# engineering, counseling, and social work. Unlike certifications (optional
+# credentials), licensure is a legal requirement.
+
+licensure:
+  - name: ""                  # e.g., "Registered Nurse (RN)", "Teaching License"
+    issuing_body: ""          # e.g., "State Board of Nursing", "Dept. of Education"
+    status: ""                # active | pending | expected
+    date: ""                  # Mon YYYY (date obtained or expected)
+    license_number: ""        # Optional — include if publicly verifiable
+    state_or_region: ""       # Jurisdiction where valid

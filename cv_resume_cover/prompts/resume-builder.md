@@ -29,6 +29,13 @@ INPUTS:
 - The user's Experience Profile (YAML file — uploaded or pasted)
 - A target job description (pasted by the user)
 
+OPTIONAL INPUT:
+- Translation guide (if uploaded). This guide maps academic and campus
+  activities to industry-standard phrasing. When available, use it to
+  reframe the user's experiences using professional terminology. Prioritize
+  the job description's language, but use the translation guide to bridge
+  any gaps between the user's academic background and industry expectations.
+
 YOUR TASK:
 Generate a one-page, ATS-friendly resume that maximizes the match between the
 user's experiences and the target role.
@@ -54,6 +61,17 @@ RULES:
       suggest bridge narratives. Example: philosophy thesis → analytical
       writing and stakeholder communication; tutoring → training and
       knowledge transfer.
+   g. KEYWORD TRANSLATION — For each of the top 10 keywords, check if the
+      user's profile uses DIFFERENT TERMINOLOGY for the same concept. Suggest
+      specific substitutions:
+      - "statistical modeling" in profile → "predictive analytics" in job desc
+      - "thesis research" → "independent research project"
+      - "peer tutoring" → "individual instruction"
+      Map the user's language to the job's language using direct equivalents.
+      If keyword match is BELOW 6/10 after translation, flag this as a
+      WARNING: "Your profile may not be a strong match for this role. Consider
+      whether a related role (such as [suggestion]) might be a better fit, or
+      whether you can honestly strengthen your profile in the gap areas."
 
 2. RESUME STRUCTURE
    Use this format:

@@ -127,6 +127,57 @@ These translations apply across **all six reviewed majors** (Psychology, Mathema
 | Language documentation / linguistics work | Content localization; multilingual communication; linguistic analysis | Localization, Tech, International Orgs |
 | Museum exhibit development | Experience design; interpretive design; public programming | Museums, Events, Marketing, Education |
 
+### Biology / Pre-Med
+
+| Academic Activity | Industry Phrasing | Target Roles |
+|---|---|---|
+| PCR, gel electrophoresis, and molecular assays | Molecular biology techniques; analytical laboratory methods | Biotech, Pharma, Clinical Labs, R&D |
+| Cell culture and maintenance | In vitro cell-based assay work; aseptic technique | Biotech, Pharma, Health Tech, CROs |
+| Animal model work (in vivo studies) | Preclinical research; in vivo study execution | Pharma, Biotech, CROs, Academic Research |
+| Lab notebook maintenance and documentation | Regulatory documentation; GLP/GMP compliance documentation | Pharma, Biotech, Clinical Labs, QA |
+| Journal club presentations | Peer review; scientific communication; literature evaluation | R&D, Medical Affairs, Health Tech, Publishing |
+| Pre-med clinical shadowing | Clinical observation; patient-facing exposure; care workflow analysis | Healthcare, Health Tech, Clinical Research |
+| Specimen collection and processing | Sample management; biobanking; specimen handling and chain of custody | Clinical Labs, Biotech, CROs, Public Health |
+| Protocol development for experiments | Standard operating procedure (SOP) authoring; method development | Pharma, Biotech, QA, Manufacturing |
+
+### Nursing / Health Sciences
+
+| Academic Activity | Industry Phrasing | Target Roles |
+|---|---|---|
+| Clinical rotations | Supervised clinical practice; clinical practicum | Healthcare, Public Health, Clinical Research |
+| Patient assessments (vitals, history, physical) | Health screenings; intake evaluations; clinical assessment | Healthcare, Public Health, Insurance, Wellness |
+| Medication administration | Pharmaceutical protocol compliance; medication management | Healthcare, Pharma, Long-Term Care |
+| Care plan development | Individualized treatment planning; care coordination | Healthcare, Case Management, Health Tech |
+| Charting and clinical documentation | Electronic health record (EHR) management; clinical documentation | Healthcare, Health Tech, Health Informatics |
+| Patient education and discharge teaching | Health literacy promotion; patient advocacy; client education | Healthcare, Public Health, Nonprofit, Wellness |
+| Shift handoff reports | Clinical communication; continuity-of-care reporting; structured handover | Healthcare, Emergency Services, Operations |
+| Code response and emergency drills | Emergency response; crisis management; rapid assessment and intervention | Healthcare, Emergency Services, Safety, Risk |
+
+### Graphic Design / Visual Arts
+
+| Academic Activity | Industry Phrasing | Target Roles |
+|---|---|---|
+| Senior exhibition / gallery show | Portfolio presentation; public showcase; curated body of work | Design, Advertising, Museums, Media |
+| Client rebrand project (class or freelance) | Brand identity development; visual identity system design | Branding, Agency, Marketing, Startups |
+| Art direction for campus magazine | Creative direction; editorial design; visual content strategy | Media, Publishing, Agency, Marketing |
+| Critique sessions and peer feedback | Design review; iterative feedback; collaborative refinement | Design, Product, UX, Agency |
+| Typography and layout coursework | Visual communication; information design; typographic systems | Design, Publishing, Marketing, UX |
+| Freelance logo and identity work | Brand design consulting; visual mark development | Branding, Agency, Startups, Consulting |
+| Print production and pre-press preparation | Production management; vendor coordination; print-ready asset delivery | Publishing, Manufacturing, Marketing, Packaging |
+
+### Education / Teaching
+
+| Academic Activity | Industry Phrasing | Target Roles |
+|---|---|---|
+| Student teaching placement | Classroom instruction; curriculum delivery; supervised teaching practicum | K-12 Education, EdTech, Corporate L&D |
+| Lesson planning and unit design | Curriculum design; instructional planning; learning experience design | Education, EdTech, L&D, Nonprofit |
+| IEP meetings and participation | Individualized education plan (IEP) development; accommodations planning | Special Education, Student Services, EdTech |
+| Classroom management strategies | Learning environment management; behavioral support; engagement strategies | Education, Youth Programs, L&D |
+| Parent-teacher conferences | Stakeholder communication; family engagement; progress reporting | Education, Social Services, Nonprofit |
+| Assessment design (tests, rubrics, portfolios) | Evaluation and measurement; assessment instrument development | Education, EdTech, HR, Certification |
+| Differentiated instruction | Inclusive pedagogy; adaptive teaching; multi-modal instruction | Education, EdTech, Accessibility, L&D |
+| After-school program leadership | Extended learning program coordination; out-of-school-time programming | Nonprofit, Education, Youth Development, Community Orgs |
+
 ---
 
 ## Part 3: Usage Notes

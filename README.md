@@ -18,6 +18,7 @@ This decouples **memory from presentation**, reducing cognitive load and prevent
 4. **Generate a cover letter** — upload your YAML + job description + company info + the [Cover Letter Builder prompt](cv_resume_cover/prompts/cover-letter-builder.md)
 5. **Update your profile** — use the [Experience Update prompt](cv_resume_cover/prompts/experience-update.md) to add new experiences without re-interviewing
 6. **Set up memory** — follow the [Memory Integration Guide](cv_resume_cover/guides/memory-integration.md) for a smoother experience across sessions
+7. **Run a mentorship session** — follow the [Session Workflow Guide](cv_resume_cover/guides/session-workflow.md) for a structured 3-session model
 
 #### Structure
 
@@ -41,6 +42,7 @@ cv_resume_cover/
     job-descriptions/                      # Sample JDs for practice
   guides/
     memory-integration.md                  # Chat memory setup across platforms
+    session-workflow.md                    # 3-session mentorship facilitation guide
   testing/
     personas.md                            # 10 test personas (7 archetypes)
 ```
@@ -64,7 +66,7 @@ See [`cv_resume_cover/proposal.md`](cv_resume_cover/proposal.md) for the full pr
 - Profile maintenance (lightweight update prompt)
 - Tested across 10 personas, 7 archetypes — avg score 4.16/5.00 (resume), 4.90/5.00 (cover letter)
 
-🔮 **Next:** Mentorship session workflow guide, feedback loops, CV generation.
+🔮 **Next:** Feedback loops, CV generation.
 
 ---
 

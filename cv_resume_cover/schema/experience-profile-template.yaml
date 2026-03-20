@@ -29,6 +29,19 @@ profile:
   work_authorization: ""      # e.g., "US Citizen", "OPT (valid through Dec 2026)",
                               #       "Requires sponsorship", "EU work permit"
 
+  # What drives your career choices? Used for cover letters and personal statements.
+  # Update this as your goals evolve.
+  career_narrative:
+    interests: ""             # What kind of work excites you? (1-2 sentences)
+                              # e.g., "I'm drawn to work that combines data analysis
+                              #        with real-world social impact."
+    target_industries: []     # Industries or sectors you're targeting
+                              # e.g., ["health tech", "public health", "clinical research"]
+    values: []                # What matters to you in a workplace?
+                              # e.g., ["mentorship", "diversity", "innovation", "work-life balance"]
+    short_term_goal: ""       # Where do you want to be in 1-2 years? (1 sentence)
+    long_term_goal: ""        # Where do you want to be in 5+ years? (1 sentence)
+
 # =============================================================================
 # EXPERIENCES
 # =============================================================================

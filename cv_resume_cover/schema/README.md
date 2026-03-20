@@ -20,6 +20,9 @@ It is designed to be:
 ```
 profile:
   name, contact, summary, work_authorization
+  career_narrative:
+    interests, target_industries[], values[]
+    short_term_goal, long_term_goal
 
 experiences[]:
   title, organization, type, scope, dates

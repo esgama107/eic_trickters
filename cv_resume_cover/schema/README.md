@@ -27,11 +27,13 @@ profile:
 experiences[]:
   title, organization, type, scope, dates
   context       — what the role/project was about
+  team_context  — size, role_in_team (solo, led, collaborated, supported)
   actions[]     — what you did (verb-first)
   skills[]      — tools, methods, skills, and approaches used
   outcomes[]    — results: quantitative, qualitative, or artifacts
   learnings[]   — what you grew from
-  keywords[]    — ATS-relevant terms
+  challenges[]  — obstacles faced (fuels cover letter narratives)
+  keywords[]    — ATS-relevant terms (AI-populated)
   supervised_hours — total, type, supervisor_title (clinical/practicum)
   populations_served — who you served or worked with
   client        — for freelance or consulting work

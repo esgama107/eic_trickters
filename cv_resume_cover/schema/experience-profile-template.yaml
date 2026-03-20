@@ -69,6 +69,15 @@ experiences:
     # What was this role/project about? 1-2 sentences of context.
     context: ""
 
+    # Who did you work with? Captures team dynamics and your role.
+    team_context:
+      size: ""                # e.g., "solo", "3 people", "12-person team"
+      role_in_team: ""        # e.g., "led", "collaborated as equal", "supported lead"
+
+    # What challenges did you face? Fuels cover letter narratives.
+    challenges:
+      - ""
+
     # What did YOU do? Use action verbs. One action per line.
     actions:
       - ""

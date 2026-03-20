@@ -145,6 +145,14 @@ RULES:
      Why this field? Why this kind of work? What drives this person?
    - Use the "values" field (if present) to align with the company's
      culture. Don't just state values — show how they were lived.
+   - challenges[] → demonstrates resilience and problem-solving; use to
+     show the user overcame obstacles relevant to the target role.
+     Weave challenges into body paragraphs as narrative arcs: the
+     obstacle faced, the action taken, and the growth that followed.
+   - team_context → use team size and role_in_team to demonstrate
+     collaboration and leadership. Weave into narratives naturally:
+     "Working within a team of 5..." or "As the sole [role] on a
+     cross-functional team..."
 
 4. COMPANY-SPECIFIC RULES
    - Mirror the company's language. If they say "impact", say "impact",

@@ -242,12 +242,35 @@ Check for these patterns:
   it's not listed in your skills inventory. Consider adding it to your
   profile so future documents can draw on it."
 
+  MISSING CHALLENGES:
+  If the feedback implies the user should demonstrate problem-solving or
+  resilience but the profile lacks challenges[] entries:
+  "💡 Challenges gap: Your mentor suggested showing how you handle
+  obstacles, but your Experience Profile doesn't capture specific challenges
+  for this experience. Use the Experience Update prompt to add challenges
+  you faced and how you overcame them — these make compelling resume bullets
+  and cover letter narratives."
+
+  MISSING TEAM CONTEXT:
+  If the feedback asks for collaboration or leadership evidence but the
+  profile lacks team_context data:
+  "💡 Team context gap: Your mentor wants to see more about how you work
+  with others, but your profile doesn't include team_context (team size and
+  your role within the team). Use the Experience Update prompt to add this
+  — even 'solo contributor' or 'team of 3' is valuable context."
+
   NARRATIVE GAPS:
   If the feedback suggests the user needs a clearer career story:
   "💡 Career narrative: Your mentor's feedback suggests your career
   direction could be clearer. Consider updating the career_narrative section
   of your profile — especially the 'interests' and 'short_term_goal'
   fields. A strong narrative makes every document easier to write."
+
+  KEYWORDS NOTE:
+  The keywords[] field in the Experience Profile is AI-populated from the
+  user's actions, tools, and context — not manually entered. When checking
+  keyword alignment, generate keywords from the profile data rather than
+  expecting a pre-filled keywords[] array.
 
 Present upstream recommendations as a numbered list, each with:
   - What the gap is

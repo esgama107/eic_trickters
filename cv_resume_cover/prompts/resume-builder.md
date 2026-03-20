@@ -61,6 +61,10 @@ RULES:
       suggest bridge narratives. Example: philosophy thesis → analytical
       writing and stakeholder communication; tutoring → training and
       knowledge transfer.
+      NOTE: The user's challenges[] field (if available) can demonstrate
+      problem-solving ability. Use specific challenges the user overcame to
+      address gap areas or bridge career pivots — overcoming relevant
+      obstacles signals readiness for similar challenges in the target role.
    g. KEYWORD TRANSLATION — For each of the top 10 keywords, check if the
       user's profile uses DIFFERENT TERMINOLOGY for the same concept. Suggest
       specific substitutions:
@@ -72,6 +76,11 @@ RULES:
       WARNING: "Your profile may not be a strong match for this role. Consider
       whether a related role (such as [suggestion]) might be a better fit, or
       whether you can honestly strengthen your profile in the gap areas."
+   h. AUTO-GENERATE KEYWORDS — The experience profile may not include
+      user-provided keywords (they are AI-populated). Generate relevant
+      keywords from the user's actions, tools, and context fields, then
+      match against the job description. Do not expect a keywords[] field
+      to be pre-filled.
 
 2. RESUME STRUCTURE
    Use this format:
@@ -107,6 +116,9 @@ RULES:
      • Include metrics when available, but qualitative outcomes are valid:
        "Published peer-reviewed paper", "Presented findings to stakeholders",
        "Improved team onboarding process"
+     • When team_context is available, weave it into bullets naturally:
+       "Led a team of 5 to deliver..." or "Collaborated with 3 cross-functional
+       departments to..."
      • Weave in job description keywords naturally
    
    EDUCATION

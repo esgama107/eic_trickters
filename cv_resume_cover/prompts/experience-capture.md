@@ -2,7 +2,7 @@
 
 > **What this is:** A structured prompt you paste into a chat assistant (Copilot, Claude, ChatGPT) to guide an early-in-career user through capturing their professional experiences.
 >
-> **What it produces:** A filled [Experience Profile](../schema/experience-profile-template.yaml) in YAML format — the canonical source for all future resume/CV/letter generation.
+> **What it produces:** A filled [Experience Profile](../schema/experience-profile-template.yaml) in YAML format — the central source for all future resume/CV/letter generation.
 >
 > **Who it's for:** Early-in-career (EIC) professionals who may not remember all their experiences or know how to articulate them.
 

@@ -4,7 +4,7 @@
 
 > **Core insight:** Experiences are stable; framing changes per audience. Capture once, tailor many.
 
-Built for **early-in-career (EIC) professionals**, mentors, and anyone revisiting their career narrative. The system replaces the painful cycle of rewriting documents from memory with a structured pipeline: capture your experiences in a rich, portable format, then let AI translate and present them for each opportunity.
+Built for **early-in-career (EIC) professionals**, mentors, and anyone revisiting their career narrative. The system replaces the painful cycle of rewriting documents from memory with a structured process: capture your experiences in a rich, portable format, then let AI translate and present them for each opportunity.
 
 ---
 

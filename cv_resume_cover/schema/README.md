@@ -1,12 +1,12 @@
 # Experience Profile — Portable Format
 
-This YAML template is the **canonical source of truth** for a person's professional experiences.
+This YAML template is the **central source of truth** for a person's professional experiences.
 It is designed to be:
 
 - **Human-readable** — easy to review and edit in any text editor
 - **Portable** — can be uploaded to any chat interface (Copilot, Claude, ChatGPT) as context
-- **Structured** — parseable by AI assistants to generate tailored resumes, CVs, and letters
-- **Append-friendly** — new experiences are added; nothing is deleted
+- **Structured** — readable by AI assistants to generate tailored resumes, CVs, and letters
+- **Append-friendly** — designed so you can keep adding new experiences without changing what's already there
 
 ## How to use
 

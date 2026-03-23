@@ -4,7 +4,7 @@
 >
 > **What it needs:** Your current document (resume or cover letter), the feedback from your mentor, your [Experience Profile](../schema/experience-profile-template.yaml) (YAML file), and the original job description you targeted.
 >
-> **What it produces:** A revised document with every piece of feedback addressed, a before/after diff summary, updated alignment scores, and upstream recommendations for improving your Experience Profile when feedback reveals gaps.
+> **What it produces:** A revised document with every piece of feedback addressed, a before/after diff summary, updated ATS (Applicant Tracking Systems — software that filters resumes) and keyword alignment scores, and recommendations for improving your Experience Profile when feedback reveals gaps.
 
 ---
 
@@ -15,7 +15,7 @@
 3. Upload your `experience-profile.yaml` for reference
 4. Paste the original job description you were targeting
 5. Copy the prompt below into the chat
-6. The assistant will parse the feedback, apply revisions, validate the result, and flag any profile gaps to address upstream
+6. The assistant will parse the feedback, apply revisions, validate the result, and flag any profile gaps to address back in your Experience Profile
 
 ---
 
@@ -314,5 +314,5 @@ good; now it's great" — not as fixing mistakes.
 - **Don't skip the YAML.** Your Experience Profile is the source of truth. If your mentor suggests adding something that isn't in your profile, update the profile FIRST — then revise the document. This keeps everything consistent across all your applications.
 - **Trust the round system.** Round 1 is for big changes. Round 2 is for polish. Round 3+ is for letting go. Over-polishing is real — at some point, your document is ready, and the best next step is to submit it.
 - **Not all feedback needs to be applied.** If the prompt flags a conflict between your mentor's suggestion and ATS best practices or job alignment, you get to choose. Your mentor may not know the specific role you're targeting as well as you do.
-- **Upstream recommendations are the hidden value.** When the prompt suggests updating your Experience Profile, that's not extra work — it's an investment. A stronger profile makes EVERY future resume and cover letter better, not just this one.
+- **Profile improvement recommendations are the hidden value.** When the prompt suggests updating your Experience Profile, that's not extra work — it's an investment. A stronger profile makes EVERY future resume and cover letter better, not just this one.
 - **Feedback is a feature, not a bug.** Getting detailed feedback from a mentor means they see potential in your work and want to help you succeed. Every round of revision is a mentorship moment — not just a document fix.

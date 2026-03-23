@@ -8,7 +8,7 @@ A collection of ideas and tools born from mentorship sessions, designed to help 
 
 **Core idea:** Capture professional experiences *once* in rich detail, then derive resumes, CVs, cover letters, and other documents by changing *focus* — not relying on memory.
 
-This decouples **memory from presentation**, reducing cognitive load and preventing information loss across document iterations.
+This decouples **memory from presentation** — you capture your experiences once, and the AI handles how to present them for each audience — reducing mental effort and preventing information loss across document iterations.
 
 #### Quick Start
 
@@ -55,13 +55,13 @@ See [`cv_resume_cover/proposal.md`](cv_resume_cover/proposal.md) for the full pr
 - **Chat-first interaction** — designed to work through conversational AI interfaces (Copilot, Claude, ChatGPT) using memories and structured prompts
 - **EIC-friendly, expert-compatible** — approachable for early-career users, valuable for experienced professionals too
 - **Capture once, tailor many** — experiences are stable; framing changes per audience and purpose
-- **Iterate without losing** — every version builds on a canonical source, nothing gets forgotten
+- **Iterate without losing** — every version builds on a central source, nothing gets forgotten
 - **Portable by default** — YAML file travels across platforms; no vendor lock-in
 
 ## Status
 
-✅ **v1.0** — Full application package pipeline is operational:
-- Experience capture (8-phase interview, 10+ experience types, field-aware coaching)
+✅ **v1.0 (first complete version)** — Full application package process is operational:
+- Experience capture (8-phase interview, 10+ experience types, coaching tailored to your field)
 - Resume generation (ATS (Applicant Tracking Systems — software that filters resumes)-optimized, keyword translation, career pivot support)
 - Cover letter generation (narrative structure, tone switching, company-specific)
 - Profile maintenance (lightweight update prompt)

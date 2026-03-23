@@ -46,7 +46,7 @@ Offer these choices:
   2. Add a new certification, award, or publication
   3. Update an existing experience (role ended, new outcomes, changed title)
   4. Update skills inventory
-  5. Update professional summary
+  5. Update professional summary or career goals
   6. Update licensure status
 
 Then follow the appropriate path below.
@@ -91,6 +91,9 @@ NOTE: Do NOT ask the user for keywords. The keywords[] field is
 AI-populated at output time based on the user's actions, tools, and context.
 
 FIELD-AWARE FOLLOW-UPS — ask these only when relevant to the experience type:
+- If type is project, research, or thesis:
+  "What was the scope of this — a course project, semester-long effort,
+   multi-year work, funded research, or independent initiative?"
 - If type is practicum or fieldwork:
   "Did you accumulate supervised hours? If so, roughly how many, and who was
    your supervisor?"
@@ -170,14 +173,26 @@ Show the user's current skills from their profile. Then ask:
 4. "Anything to remove that's no longer relevant?"
 
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
-PATH 5: UPDATE PROFESSIONAL SUMMARY
+PATH 5: UPDATE PROFESSIONAL SUMMARY OR CAREER GOALS
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
-Show the user's current summary. Then ask:
+Show the user's current summary and career_narrative. Then ask:
+"Which would you like to update?"
+  a. Professional summary (the 2-3 sentence overview)
+  b. Career goals and direction (interests, target industries, values, goals)
+  c. Both
+
+For SUMMARY:
 1. "What's changed? (New role, new focus, new career direction?)"
 2. "In a sentence or two, how would you describe yourself professionally now?"
-
 Draft a revised summary (2-3 sentences) and ask if it feels right.
+
+For CAREER GOALS (career_narrative):
+1. "What kind of work excites you right now? Has that changed?"
+2. "Are you targeting different industries or sectors than before?"
+3. "Have your workplace values or priorities shifted?"
+4. "Where do you want to be in 1-2 years? And in 5+ years?"
+Output the updated career_narrative section.
 
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 PATH 6: UPDATE LICENSURE STATUS
@@ -219,15 +234,25 @@ After capturing and confirming:
    cover letter sessions reflect it."
 
 YAML SCHEMA REFERENCE (for output formatting):
-- experiences[]: title, organization, type, start_date, end_date, location,
-  context, actions[], skills[], outcomes[], learnings[], keywords[]
-  (AI-populated at output), team_context (size, role_in_team), challenges[]
+- profile: name, email, phone, location, linkedin, portfolio, summary,
+  work_authorization, career_narrative (interests, target_industries, values,
+  short_term_goal, long_term_goal)
+- experiences[]: title, organization, type, scope, start_date, end_date,
+  location, context, team_context (size, role_in_team), challenges[],
+  actions[], skills[], outcomes[], learnings[], keywords[] (AI-populated
+  at output), supervised_hours (total, type, supervisor_title),
+  populations_served, client
+- education[]: degree, institution, start_date, end_date, location, gpa,
+  highlights[]
 - certifications[]: name, issuer, date, url
 - awards[]: title, issuer, date
 - publications[]: title, venue, date, url, role
 - portfolio_pieces[]: title, description, url
 - skills_inventory: technical[], interpersonal[], languages[] (language +
   proficiency)
+- licensure[]: name, issuing_body, status, date, license_number,
+  state_or_region
+- interests[]: free-text list
 
 DATE FORMAT: Always use "Mon YYYY" (e.g., Jan 2024, Present, Expected Jun 2025).
 

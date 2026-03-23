@@ -55,8 +55,8 @@ The prompt kit system works in three layers. Each layer has a specific job, adds
 │  The final document. Tailored to one specific role      │
 │  at one specific company.                               │
 │                                                         │
-│  Adds: formatting, narrative structure, ATS keywords,   │
-│        tone, document-specific conventions               │
+│  Adds: formatting, narrative structure, ATS (Applicant Tracking Systems)  │
+│        keywords, tone, document-specific conventions               │
 │  Filters: redundancy, anything that doesn't earn its    │
 │           space on the page                              │
 └─────────────────────────────────────────────────────────┘

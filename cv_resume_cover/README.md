@@ -8,7 +8,59 @@ Built for **early-in-career (EIC) professionals**, mentors, and anyone revisitin
 
 ---
 
-## How It Works
+### How to use a prompt from this kit
+
+1. Click the prompt link to open the file
+2. Find the text inside the gray code block (it starts with `You are a...`)
+3. Copy all of that text (use the copy button in the corner of the code block, or select all and copy)
+4. Open your chat AI (ChatGPT, GitHub Copilot, Claude, or similar)
+5. Paste the text into the chat and press Enter
+6. The AI will guide you from there
+
+> **Terminology:** A *prompt* is the text you copy and paste into a chat AI.
+> The *prompt kit* is this collection of prompts, guides, and reference materials.
+> Your *Experience Profile* is the YAML file that stores all your professional experiences.
+
+---
+
+## Getting Started
+
+### 🎓 For Users (EIC Professionals)
+
+| Step | What to do | File |
+|------|-----------|------|
+| **1. Capture your experiences** | Paste the prompt into any chat AI and complete the 8-phase interview (~45-60 min) | [experience-capture.md](prompts/experience-capture.md) |
+| **2. Save your profile** | Save the YAML output as `my-experience-profile.yaml` — this is your portable career record | [experience-profile-template.yaml](schema/experience-profile-template.yaml) |
+| **3. Find a job → generate resume** | Upload your YAML + the job description + the resume prompt | [resume-builder.md](prompts/resume-builder.md) |
+| **4. Research the company → generate cover letter** | Upload your YAML + job description + company info + the cover letter prompt | [cover-letter-builder.md](prompts/cover-letter-builder.md) |
+| **5. Get feedback → revise** | Share the output with a mentor, then use the feedback prompt to apply revisions | [feedback-revision.md](prompts/feedback-revision.md) |
+| **6. New experience → update profile** | Add new jobs, projects, or skills without re-doing the full interview (~5-10 min) | [experience-update.md](prompts/experience-update.md) |
+
+> **Tip:** Set up [chat memory](guides/memory-integration.md) so the AI remembers your profile across sessions.
+
+---
+
+### 🧑‍🏫 For Mentors
+
+**Start here:** Read the [Session Workflow Guide](guides/session-workflow.md) — it maps the prompt kit to a **3-session mentorship model** (~60 min each):
+
+| Session | Goal | Output |
+|---------|------|--------|
+| **1. Capture & Explore** | Build a complete experience profile | Completed `experience-profile.yaml` |
+| **2. Resume & Target** | Generate a tailored resume for a real job | Resume v1 |
+| **3. Cover Letter & Iterate** | Generate a cover letter + plan for iteration | Cover letter v1 + revision plan |
+
+**What mentors should know:**
+
+- **The system captures, AI formats — mentors coach on framing.** Your job is to help the mentee *articulate* their experiences, not to worry about document formatting.
+- **Push for specifics.** "I helped with the project" → "I designed the survey instrument used to collect data from 150 participants." The richer the capture, the better the output.
+- **The feedback-revision prompt closes the loop.** After reviewing a resume or cover letter, the mentee feeds your feedback back into the system — no manual reformatting needed.
+- **Optional deep-dive:** Read [How Translation Works](guides/how-translation-works.md) to understand the 3-layer model (experience inventory → translation layer → presentation output).
+
+---
+
+<details>
+<summary><strong>How It Works — Architecture Diagram</strong></summary>
 
 ```
                                                   ┌─────────────────────┐
@@ -60,41 +112,7 @@ Built for **early-in-career (EIC) professionals**, mentors, and anyone revisitin
 
 **The YAML never changes for a specific job.** One file feeds dozens of different resumes and cover letters — what changes is which parts get selected and how they get phrased.
 
----
-
-## Getting Started
-
-### 🎓 For Users (EIC Professionals)
-
-| Step | What to do | File |
-|------|-----------|------|
-| **1. Capture your experiences** | Paste the prompt into any chat AI and complete the 8-phase interview (~45-60 min) | [experience-capture.md](prompts/experience-capture.md) |
-| **2. Save your profile** | Save the YAML output as `my-experience-profile.yaml` — this is your portable career record | [experience-profile-template.yaml](schema/experience-profile-template.yaml) |
-| **3. Find a job → generate resume** | Upload your YAML + the job description + the resume prompt | [resume-builder.md](prompts/resume-builder.md) |
-| **4. Research the company → generate cover letter** | Upload your YAML + job description + company info + the cover letter prompt | [cover-letter-builder.md](prompts/cover-letter-builder.md) |
-| **5. Get feedback → revise** | Share the output with a mentor, then use the feedback prompt to apply revisions | [feedback-revision.md](prompts/feedback-revision.md) |
-| **6. New experience → update profile** | Add new jobs, projects, or skills without re-doing the full interview (~5-10 min) | [experience-update.md](prompts/experience-update.md) |
-
-> **Tip:** Set up [chat memory](guides/memory-integration.md) so the AI remembers your profile across sessions.
-
----
-
-### 🧑‍🏫 For Mentors
-
-**Start here:** Read the [Session Workflow Guide](guides/session-workflow.md) — it maps the prompt kit to a **3-session mentorship model** (~60 min each):
-
-| Session | Goal | Output |
-|---------|------|--------|
-| **1. Capture & Explore** | Build a complete experience profile | Completed `experience-profile.yaml` |
-| **2. Resume & Target** | Generate a tailored resume for a real job | Resume v1 |
-| **3. Cover Letter & Iterate** | Generate a cover letter + plan for iteration | Cover letter v1 + revision plan |
-
-**What mentors should know:**
-
-- **The system captures, AI formats — mentors coach on framing.** Your job is to help the mentee *articulate* their experiences, not to worry about document formatting.
-- **Push for specifics.** "I helped with the project" → "I designed the survey instrument used to collect data from 150 participants." The richer the capture, the better the output.
-- **The feedback-revision prompt closes the loop.** After reviewing a resume or cover letter, the mentee feeds your feedback back into the system — no manual reformatting needed.
-- **Optional deep-dive:** Read [How Translation Works](guides/how-translation-works.md) to understand the 3-layer model (experience inventory → translation layer → presentation output).
+</details>
 
 ---
 
@@ -145,7 +163,7 @@ cv_resume_cover/
 | **Capture once, tailor many** | The YAML profile is the single source of truth. One file, many documents. |
 | **EIC-friendly** | Warm tone, hand-holding, confidence nudges. Designed for people who undervalue their experiences. |
 | **Field-agnostic** | Tested across 7 archetypes and 10 majors — from mechanical engineering to philosophy to nursing. |
-| **AI does the formatting** | Humans capture experiences and make framing decisions. AI handles translation, structure, and ATS optimization. |
+| **AI does the formatting** | Humans capture experiences and make framing decisions. AI handles translation, structure, and ATS (Applicant Tracking Systems — software that filters resumes) optimization. |
 
 ---
 

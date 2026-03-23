@@ -12,7 +12,7 @@ The prompt kit has four tools:
 |------|-------------|------|
 | [Experience Capture](../prompts/experience-capture.md) | Interview-style profile builder (8 phases) | 45-60 min |
 | [Experience Update](../prompts/experience-update.md) | Add or change one thing in your profile | 5-10 min |
-| [Resume Builder](../prompts/resume-builder.md) | Generate a tailored, ATS-optimized resume | 20-30 min |
+| [Resume Builder](../prompts/resume-builder.md) | Generate a tailored resume optimized for ATS (Applicant Tracking Systems — software that filters resumes) | 20-30 min |
 | [Cover Letter Builder](../prompts/cover-letter-builder.md) | Generate a narrative cover letter | 20-30 min |
 
 This guide maps those tools to a **3-session model** — roughly 60 minutes each — that takes a mentee from zero to a complete application package. You can compress or expand this model (see [Adapting the 3-session model](#adapting-the-3-session-model) below).
@@ -40,6 +40,19 @@ This guide maps those tools to a **3-session model** — roughly 60 minutes each
 **Mentee:**
 - Think about your experiences — jobs, internships, projects, volunteering, research, teaching, thesis work, competitions. Write a rough list if it helps.
 - Have your LinkedIn or existing resume open for reference (not required, but useful for jogging memory)
+
+### Quick reference — the 8 interview phases
+
+| Phase | Topic | What happens |
+|-------|-------|-------------|
+| 1 | Basics | Name, contact, location, professional summary |
+| 2 | Career Direction | Interests, target industries, values, goals |
+| 3 | Experiences | For each: type, actions, outcomes, challenges, learnings (longest phase) |
+| 4 | Education | Degrees, institutions, highlights |
+| 5 | Skills | Technical, interpersonal, languages |
+| 6 | Publications & Portfolio | Papers, creative work, portfolio pieces |
+| 7 | Awards & Certifications | Honors, licenses, professional certifications |
+| 8 | Wrap-Up | Review, confirm, output YAML file |
 
 ### Running the session
 
@@ -271,7 +284,7 @@ Your job is to help the mentee build the skill, not to build the document for th
 - **Vague descriptions.** "Helped with the project" isn't a resume bullet. Push for the specific contribution.
 - **Inflated claims.** If the mentee "led" a team they were a member of, correct it. Honesty survives interviews; exaggeration doesn't.
 - **Skipping company research.** If the mentee hasn't researched the company for the cover letter, pause and do it together. A generic letter wastes everyone's time.
-- **Dismissing experiences.** EIC mentees routinely undervalue class projects, tutoring, volunteering, and thesis work. These are real experiences. Help them see that.
+- **Dismissing experiences.** EIC (early-in-career) mentees routinely undervalue class projects, tutoring, volunteering, and thesis work. These are real experiences. Help them see that.
 
 ### What to look for in generated output
 

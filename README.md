@@ -16,9 +16,10 @@ This decouples **memory from presentation**, reducing cognitive load and prevent
 2. **Save your profile** — the assistant produces a YAML file; save it as `my-experience-profile.yaml`
 3. **Generate a resume** — upload your YAML + a job description + the [Resume Builder prompt](cv_resume_cover/prompts/resume-builder.md)
 4. **Generate a cover letter** — upload your YAML + job description + company info + the [Cover Letter Builder prompt](cv_resume_cover/prompts/cover-letter-builder.md)
-5. **Update your profile** — use the [Experience Update prompt](cv_resume_cover/prompts/experience-update.md) to add new experiences without re-interviewing
-6. **Set up memory** — follow the [Memory Integration Guide](cv_resume_cover/guides/memory-integration.md) for a smoother experience across sessions
-7. **Run a mentorship session** — follow the [Session Workflow Guide](cv_resume_cover/guides/session-workflow.md) for a structured 3-session model
+5. **Get feedback → revise** — share the output with a mentor, then use the [Feedback & Revision prompt](cv_resume_cover/prompts/feedback-revision.md) to apply revisions systematically
+6. **Update your profile** — use the [Experience Update prompt](cv_resume_cover/prompts/experience-update.md) to add new experiences without re-interviewing
+7. **Set up memory** — follow the [Memory Integration Guide](cv_resume_cover/guides/memory-integration.md) for a smoother experience across sessions
+8. **Run a mentorship session** — follow the [Session Workflow Guide](cv_resume_cover/guides/session-workflow.md) for a structured 3-session model
 
 #### Structure
 
@@ -61,7 +62,7 @@ See [`cv_resume_cover/proposal.md`](cv_resume_cover/proposal.md) for the full pr
 
 ✅ **v1.0** — Full application package pipeline is operational:
 - Experience capture (8-phase interview, 10+ experience types, field-aware coaching)
-- Resume generation (ATS-optimized, keyword translation, career pivot support)
+- Resume generation (ATS (Applicant Tracking Systems — software that filters resumes)-optimized, keyword translation, career pivot support)
 - Cover letter generation (narrative structure, tone switching, company-specific)
 - Profile maintenance (lightweight update prompt)
 - Tested across 10 personas, 7 archetypes — avg score 4.16/5.00 (resume), 4.90/5.00 (cover letter)

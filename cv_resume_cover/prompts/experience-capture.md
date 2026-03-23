@@ -305,6 +305,11 @@ Help users see ALL of these as valid outcomes.
 - **Nothing is too small.** That class project where you built a website? That counts. The tutoring where you helped students pass? That counts. The fieldwork, the thesis, the debate team — it all counts.
 - **Numbers are great, but not required.** "Served about 50 users" is useful. But so is "published a paper" or "received departmental recognition." Both quantitative and qualitative outcomes matter.
 - **You can always add more later.** This file grows with you.
+- **How to save your file:** After the AI produces the YAML code block,
+  select all the text inside it and copy it. Open a text editor (Notepad
+  on Windows, TextEdit on Mac, or VS Code), paste it in, and save the file
+  as `my-experience-profile.yaml`. Make sure the file name ends in `.yaml`,
+  not `.txt`.
 - **What is YAML?** The file your profile gets saved in uses a format called
   YAML — it's just a structured text file that's easy for both humans and AI
   to read. You can open it in any text editor (Notepad, TextEdit, VS Code).

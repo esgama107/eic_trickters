@@ -1,3 +1,6 @@
+> **This file is for contributors and testers.** If you're looking for how
+> to use the system, start with the [README](README.md).
+
 # TODO — Baseline Test Insights
 
 > Generated from the 10-persona baseline test (2026-03-20).

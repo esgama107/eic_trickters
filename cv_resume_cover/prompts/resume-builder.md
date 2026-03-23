@@ -2,7 +2,7 @@
 
 > **What this is:** A structured prompt you paste into a chat assistant (Copilot, Claude, ChatGPT) to generate an ATS-optimized, job-seeking resume from a captured Experience Profile.
 >
-> **What it needs:** An [Experience Profile](../schema/experience-profile-template.yaml) (YAML file) — created using the [Experience Capture prompt](experience-capture.md) — and a target job description.
+> **What it needs:** An [Experience Profile](../schema/experience-profile-template.yaml) (a YAML file that stores all your professional experiences) — created using the [Experience Capture prompt](experience-capture.md) — and a target job description.
 >
 > **What it produces:** A tailored, one-page resume optimized for applicant tracking systems (ATS).
 >
@@ -146,7 +146,7 @@ RULES:
      (SEO)"
    - ALL dates must use "Mon YYYY" format (e.g., Jan 2024 - Present)
 
-4. EIC-SPECIFIC GUIDANCE
+4. EIC (EARLY-IN-CAREER)-SPECIFIC GUIDANCE
    - If the user has limited work experience, elevate projects, internships,
      coursework, teaching, fieldwork, and thesis work — they count
    - Reframe academic, volunteer, or non-traditional work using professional
@@ -190,3 +190,5 @@ a markdown version (for formatting in a document editor).
 - **Don't include everything** — a focused resume beats a comprehensive one. Your YAML file preserves everything; the resume shows only what matters for *this* role.
 - **Iterate** — run this prompt multiple times for different jobs. Each resume should look different.
 - **Gaps are okay** — an honest resume that shows strong partial fit beats a padded one that falls apart in interviews.
+- **Got feedback?** Use the [Feedback & Revision prompt](feedback-revision.md)
+  to apply mentor or peer feedback systematically.

@@ -97,7 +97,11 @@ prompt as instructions.
 
 ## Updating your profile
 
-When you gain new experiences:
+The easiest way to add new experiences is the
+[Experience Update prompt](../prompts/experience-update.md) — it takes
+5-10 minutes and produces a ready-to-paste YAML snippet.
+
+If you prefer to edit the file manually:
 
 1. Open your `experience-profile.yaml`
 2. Add the new experience at the top of the `experiences` list

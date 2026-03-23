@@ -2,7 +2,7 @@
 
 > **What this is:** A structured prompt you paste into a chat assistant (Copilot, Claude, ChatGPT) to generate a compelling, tailored cover letter from a captured Experience Profile.
 >
-> **What it needs:** An [Experience Profile](../schema/experience-profile-template.yaml) (YAML file) — created using the [Experience Capture prompt](experience-capture.md) — a target job description, and company/organization information.
+> **What it needs:** An [Experience Profile](../schema/experience-profile-template.yaml) (a YAML file that stores all your professional experiences) — created using the [Experience Capture prompt](experience-capture.md) — a target job description, and company/organization information.
 >
 > **What it produces:** A one-page, narrative cover letter that connects your story to a specific role at a specific company — not a rehash of your resume.
 
@@ -169,7 +169,7 @@ RULES:
    - Plain, clean paragraphs
    - Use standard dashes (-) not em-dashes (—) in the letter body
 
-6. EIC-SPECIFIC GUIDANCE
+6. EIC (EARLY-IN-CAREER)-SPECIFIC GUIDANCE
    - If the user has limited experience, focus on POTENTIAL, learning
      trajectory, and enthusiasm — not just past achievements. The
      "learnings" field is your best asset here.
@@ -257,3 +257,5 @@ portals), then a markdown version (for formatting in a document editor).
 - **Iterate for each application.** Every cover letter should be different. Your YAML stays the same; the letter changes for each role and company.
 - **Gaps are okay to leave out.** A cover letter doesn't need to address every requirement. Focus on your strongest 2-3 connections to the role and let them shine.
 - **Use the translation guide if you're pivoting.** If you're moving from academia to industry (or between sectors), the [Translation Guide](../reference/translation-guide.md) helps you reframe your experience in language the employer recognizes.
+- **Got feedback?** Use the [Feedback & Revision prompt](feedback-revision.md)
+  to apply mentor or peer feedback systematically.

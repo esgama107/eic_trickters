@@ -1,7 +1,8 @@
 # Test Personas — Resume/CV Prompt Kit Evaluation
 
 > **Purpose:** Standardized test inputs for automated review agents evaluating the
-> [Experience Capture](../prompts/experience-capture.md) and
+> [Experience Capture](../prompts/experience-capture.md),
+> [Experience from Resume](../prompts/experience-from-resume.md), and
 > [Resume Builder](../prompts/resume-builder.md) prompt kits.
 >
 > **How many:** 10 personas across 7 archetypes + 1 wildcard.
@@ -71,6 +72,35 @@ To test only the Resume Builder, convert a persona's data directly into a
 [schema template](../schema/experience-profile-template.yaml), then feed it
 with a realistic job description for the persona's `target_job`.
 
+### Testing Experience from Resume
+
+To test the [Experience from Resume prompt](../prompts/experience-from-resume.md):
+
+1. **Construct a realistic resume** from the persona's data (simulate what
+   a real resume would look like — formatted with sections, bullets, dates).
+2. **Feed it to a review agent** with the Experience from Resume prompt.
+3. **Test Mode A (Quick Extract):** Does it correctly parse the resume into
+   a valid YAML? Are gaps properly marked? Are experience types inferred
+   correctly (especially practicum, teaching, freelance)?
+4. **Test Mode B (Guided Fill):** Does it ask the right follow-up questions?
+   Does the batching rule trigger for similar experience types (e.g.,
+   multiple clinical rotations)? Does it avoid re-asking about data already
+   captured from the resume?
+
+### Testing ATS Evaluation
+
+To test the ATS Evaluation mode in the
+[Resume Builder prompt](../prompts/resume-builder.md):
+
+1. **Construct a resume** from the persona's data (same as above).
+2. **Construct a job description** matching the persona's `target_job`.
+3. **Feed both to a review agent** with the Resume Builder prompt (do NOT
+   provide a YAML file — the prompt should auto-detect evaluation mode).
+4. **Evaluate:** Does the format scan catch real issues? Does the keyword
+   score match expectations? Does it produce specific, actionable
+   recommendations? For career-pivot personas (Yumi, Ciarán, Rosa), does
+   the career pivot check fire?
+
 ### Batch testing
 
 Agents can iterate over all 10 personas programmatically. Each persona block
@@ -81,9 +111,16 @@ below is structured identically so it can be parsed or extracted by script.
 - **Experience Capture:** Does the prompt elicit enough detail from this persona's
   background type? Does it handle non-traditional experience types (fieldwork,
   clinical rotations, freelance) without forcing them into "job" framing?
-- **Resume Builder:** Does the career pivot check fire when it should? Are bullet
-  points using the right formula (XYZ vs. CAR vs. Narrative)? Does ATS
+- **Experience from Resume:** Does Mode A correctly parse all resume data into the
+  right schema fields? Does Mode B ask only about missing information? Does the
+  batching rule help with repetitive experiences (clinical rotations, practicum)?
+  Are supervised hours, populations served, and licensure correctly extracted?
+- **Resume Builder (Build mode):** Does the career pivot check fire when it should?
+  Are bullet points using the right formula (XYZ vs. CAR vs. Narrative)? Does ATS
   optimization work for portfolio/creative fields?
+- **Resume Builder (ATS Evaluation):** Does mode detection work? Is the keyword
+  score accurate (synonyms at 0.5 points)? Does the career pivot check fire for
+  cross-field personas? Are recommendations specific and actionable?
 
 ---
 

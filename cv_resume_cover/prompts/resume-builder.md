@@ -291,12 +291,16 @@ Check the resume for ATS compatibility issues:
 
 STEP E2 — KEYWORD ANALYSIS (requires job description)
   a. Extract the TOP 10 keywords from the job description (skills,
-     qualifications, tools, certifications, domain terms)
+     qualifications, tools, certifications, domain terms). Focus on
+     Required qualifications over Nice-to-Have. Treat "X or Y" as one
+     keyword slot (e.g., "Tableau or Power BI" = 1 slot, matched if
+     either appears).
   b. Check which keywords appear in the resume:
-     - Exact match ✅
-     - Synonym or close variant ⚠️ (note the variant used)
-     - Missing ❌
-  c. Calculate keyword match score: [N]/10
+     - Exact match ✅ (1 point)
+     - Synonym or close variant ⚠️ (0.5 points — note the variant used)
+     - Missing ❌ (0 points)
+  c. Calculate keyword match score: sum the points, round to nearest
+     whole number. Example: 4 exact + 3 synonyms = 4 + 1.5 = 5.5 → 6/10.
   d. For each missing keyword, suggest WHERE in the resume to add it
      and HOW to phrase it naturally
 
@@ -322,7 +326,18 @@ STEP E3 — CONTENT QUALITY CHECK
      - EIC with limited work experience: Education before Experience is
        acceptable
      - Experienced: Experience should come first
+     - Skills section near the top (after Summary) is generally more
+       effective for ATS keyword matching
      Flag if the order seems wrong for their level
+
+  e. CAREER PIVOT CHECK — If the user's resume background doesn't
+     directly match the target role's industry or function, note this
+     and include bridge-language suggestions in the recommendations
+     (E5). Identify transferable skills that connect the user's
+     experience to the target role. Example: "Your computational
+     modeling experience translates well to data analytics — consider
+     rephrasing 'numerical models' as 'data-driven models' and
+     'validated results' as 'validated data pipelines'."
 
 STEP E4 — ATS SCORE
 Combine the results into an overall ATS readiness score:
@@ -338,6 +353,11 @@ Combine the results into an overall ATS readiness score:
   🔴 RED (likely to be filtered out)
   Criteria: keyword match <5/10, format failures (❌), missing sections,
   vague bullets without outcomes
+
+  When dimensions fall in different tiers (e.g., keywords = RED but format
+  = GREEN), use the LOWEST tier among keyword match and format scan as the
+  baseline score. Content quality can adjust the score up or down by one
+  tier when it's significantly stronger or weaker than the other dimensions.
 
 Present the score as:
 

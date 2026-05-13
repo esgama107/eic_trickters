@@ -55,7 +55,14 @@ RULES (apply to both modes):
   improvement (don't silently drop it).
 - When inferring experience types, use context clues: job titles suggest
   "work", lab positions suggest "research", student roles suggest "project"
-  or "internship", etc.
+  or "internship", tutoring/coaching/mentoring roles suggest "teaching",
+  clinical rotations suggest "practicum", etc.
+- If the resume provides only years for dates (e.g., "2020 – 2024"), infer
+  likely months from context (Aug/May for US academic years, Jan/Dec for
+  calendar years). Add a comment: # month inferred from academic calendar
+- If a bullet references a publication, presentation, or award, extract it
+  into BOTH the experience's actions[] AND the appropriate top-level section
+  (publications[], awards[]). Don't lose data by placing it in only one.
 - Auto-generate the keywords[] field for each experience based on the
   actions, skills, and context — do NOT ask the user for keywords.
 - If the resume is in a language other than English, parse it in the
@@ -86,13 +93,24 @@ For each position, internship, project, or activity listed:
 - Company/org → organization
 - Infer type: work, internship, project, volunteering, freelance, research,
   teaching, fieldwork, thesis, practicum, competition, editorial, exhibition
+- Infer scope from context when type is project, research, or thesis:
+  course_project, semester, multi_year, funded, independent
 - Dates → start_date, end_date
 - Location → location
-- Role description or summary line → context
+- Role description or summary line → context. If the resume has no explicit
+  summary per role, synthesize a 1-2 sentence context from the bullet points
+  and job title.
 - Bullet points → actions[]
 - Tools/software/methods mentioned → skills[]
 - Quantitative or qualitative results mentioned → outcomes[]
 - Any team size or leadership mentions → team_context (size, role_in_team)
+- Supervised hours mentioned in bullets (e.g., "completed 180 clinical
+  hours") → supervised_hours (total, type, supervisor_title). Infer type
+  from context: clinical, practicum, fieldwork, or student_teaching.
+- Patient/student/client populations mentioned → populations_served
+- If the resume groups licenses and certifications together, classify by
+  legal requirement: a license is required to practice in a regulated field
+  (nursing, teaching, engineering); a certification is a voluntary credential.
 
 EDUCATION:
 - Degree → degree
@@ -115,6 +133,10 @@ AWARDS:
 
 PUBLICATIONS:
 - Each publication → publications[] (title, venue, date, url, role)
+
+PORTFOLIO:
+- GitHub repos, project links, portfolio URLs, or design samples mentioned
+  → portfolio_pieces[] (title, description, url)
 
 LICENSURE:
 - Each license → licensure[] (name, issuing_body, status, date,
@@ -230,10 +252,17 @@ e. SCOPE (for projects, research, thesis):
    "Was this a course project, semester-long effort, multi-year work, funded
    research, or independent initiative?"
 
-f. CONDITIONAL FOLLOW-UPS (same triggers as experience-capture.md):
-   - Clinical/practicum/fieldwork → supervised hours
-   - Healthcare/education/social work → populations served
-   - Freelance → client description
+f. CONDITIONAL FOLLOW-UPS (triggered by experience type):
+   - Clinical/practicum/fieldwork/student_teaching → supervised hours.
+     If supervised_hours.total was already extracted in PARSE, confirm
+     rather than re-ask: "Your resume mentions [N] hours — is that the
+     total? And what was your supervisor's title?"
+     Also ask: "What type of supervised hours were these — clinical,
+     practicum, fieldwork, or student teaching?"
+   - Healthcare/education/social work/counseling → populations served.
+     If populations_served was already extracted, confirm rather than
+     re-ask.
+   - Freelance/consulting → client description
 
 After enriching each experience, summarize:
 "Here's the enriched version of [title at organization]. Does this look
@@ -246,6 +275,16 @@ ask: "We have [N] more experiences to go through. Would you like to:
   1. Continue enriching each one (thorough)
   2. Skip to the most important ones — which roles matter most to you?
   3. Output what we have and you can enrich the rest later"
+
+BATCHING RULE: If 2+ experiences share the same type (e.g., multiple
+clinical rotations, multiple practicum placements, multiple teaching roles),
+offer to batch them BEFORE starting enrichment:
+"I see [N] [type] experiences. They'll need similar follow-up questions.
+Would you like me to ask enrichment questions for all of them together,
+or go through each one individually?"
+When batching, ask shared questions once (e.g., supervisor title, populations
+served) and per-experience questions for each (e.g., specific challenges,
+specific outcomes).
 
 STEP B4 — WORK AUTHORIZATION
 "One more thing — do you have a specific work authorization status?

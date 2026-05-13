@@ -30,8 +30,10 @@ Built for **early-in-career (EIC) professionals**, mentors, and anyone revisitin
 | Step | What to do | File |
 |------|-----------|------|
 | **1. Capture your experiences** | Paste the prompt into any chat AI and complete the 8-phase interview (~45-60 min) | [experience-capture.md](prompts/experience-capture.md) |
+| **1b. Already have a resume?** | Upload your resume and convert it to a YAML profile (~5-30 min depending on mode) | [experience-from-resume.md](prompts/experience-from-resume.md) |
 | **2. Save your profile** | Save the YAML output as `my-experience-profile.yaml` — this is your portable career record | [experience-profile-template.yaml](schema/experience-profile-template.yaml) |
 | **3. Find a job → generate resume** | Upload your YAML + the job description + the resume prompt | [resume-builder.md](prompts/resume-builder.md) |
+| **3b. Evaluate an existing resume** | Upload your resume + job description to get an ATS readiness score and actionable fixes | [resume-builder.md](prompts/resume-builder.md) |
 | **4. Research the company → generate cover letter** | Upload your YAML + job description + company info + the cover letter prompt | [cover-letter-builder.md](prompts/cover-letter-builder.md) |
 | **5. Get feedback → revise** | Share the output with a mentor, then use the feedback prompt to apply revisions | [feedback-revision.md](prompts/feedback-revision.md) |
 | **6. New experience → update profile** | Add new jobs, projects, or skills without re-doing the full interview (~5-10 min) | [experience-update.md](prompts/experience-update.md) |
@@ -126,8 +128,10 @@ cv_resume_cover/
 │
 ├── prompts/                          ── The core prompt kit ──
 │   ├── experience-capture.md    ← 8-phase interview (start here)
+│   ├── experience-from-resume.md← Convert existing resume → YAML profile
 │   ├── experience-update.md     ← Add new experiences (5-10 min)
 │   ├── resume-builder.md        ← ATS-optimized resume from profile + JD
+│   │                               (also evaluates existing resumes)
 │   ├── cover-letter-builder.md  ← Narrative cover letter from profile + JD + company
 │   └── feedback-revision.md     ← Apply mentor feedback, loop back to profile
 │

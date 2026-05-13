@@ -27,6 +27,7 @@ tailored, ATS-optimized resume for a specific job.
 
 INPUTS:
 - The user's Experience Profile (YAML file — uploaded or pasted)
+  OR an existing resume/CV (for ATS Evaluation mode — see below)
 - A target job description (pasted by the user)
 
 OPTIONAL INPUT:
@@ -36,7 +37,29 @@ OPTIONAL INPUT:
   the job description's language, but use the translation guide to bridge
   any gaps between the user's academic background and industry expectations.
 
-YOUR TASK:
+— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
+MODE DETECTION
+— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
+
+This prompt supports TWO modes. Detect which one automatically:
+
+  BUILD MODE — The user uploaded a YAML Experience Profile.
+  → Proceed to YOUR TASK below and generate a tailored resume.
+
+  EVALUATE MODE — The user uploaded or pasted an existing resume/CV
+  (not a YAML file). Signals: PDF upload, formatted document, or text
+  that looks like a traditional resume with sections like "Experience",
+  "Education", "Skills".
+  → Skip to the ATS EVALUATION section at the end of this prompt.
+
+If you're unsure which mode applies, ask:
+"I see you've uploaded a document. Is this:
+  1. Your Experience Profile (YAML file) — I'll build a new resume from it
+  2. An existing resume you'd like me to evaluate for ATS compatibility"
+
+— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
+
+YOUR TASK (BUILD MODE):
 Generate a one-page, ATS-friendly resume that maximizes the match between the
 user's experiences and the target role.
 
@@ -221,6 +244,142 @@ RULES:
 
 OUTPUT FORMAT: Provide the plain-text version first (ATS-safe), followed by
 a markdown version (for formatting in a document editor).
+
+— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
+ATS EVALUATION (EVALUATE MODE)
+— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
+
+When the user provides an EXISTING RESUME (not a YAML profile), switch to
+evaluation mode. Your job is to score the resume's ATS readiness and provide
+actionable feedback.
+
+A target job description is REQUIRED for keyword analysis. If the user
+didn't provide one, ask: "To evaluate your resume's ATS compatibility, I
+need the job description you're targeting. Can you paste it?"
+
+If the user wants a general evaluation without a specific job description,
+you can still do the format scan and content quality check, but skip the
+keyword analysis and note that the score will be less accurate without a JD.
+
+STEP E1 — FORMAT SCAN
+Check the resume for ATS compatibility issues:
+
+  a. SECTION HEADINGS — Does it use standard headings?
+     Standard: Experience, Education, Skills, Certifications, Summary
+     Non-standard: flag and suggest replacements
+     Score: ✅ standard | ⚠️ mostly standard | ❌ non-standard headings
+
+  b. FORMATTING — Are there elements that break ATS parsing?
+     Check for: tables, columns, text boxes, graphics, icons, headers/
+     footers with critical info, special characters, fancy bullet symbols
+     Score: ✅ clean | ⚠️ minor issues | ❌ ATS-breaking formatting
+
+  c. DATE FORMAT — Are dates consistent and parseable?
+     Preferred: Mon YYYY (e.g., Jan 2024 - Present)
+     Acceptable: MM/YYYY, Month YYYY
+     Problematic: year-only, inconsistent formats, missing dates
+     Score: ✅ consistent | ⚠️ inconsistent | ❌ missing or unparseable
+
+  d. CONTACT INFORMATION — Is it present and correctly placed?
+     Check: name, email, phone, location, LinkedIn
+     Score: ✅ complete | ⚠️ partial | ❌ missing critical info
+
+  e. FILE STRUCTURE — Can ATS software parse the document?
+     Check: single-column layout, no text-in-images, readable font,
+     reasonable length (1-2 pages for EIC)
+     Score: ✅ parseable | ⚠️ may have issues | ❌ likely unparseable
+
+STEP E2 — KEYWORD ANALYSIS (requires job description)
+  a. Extract the TOP 10 keywords from the job description (skills,
+     qualifications, tools, certifications, domain terms)
+  b. Check which keywords appear in the resume:
+     - Exact match ✅
+     - Synonym or close variant ⚠️ (note the variant used)
+     - Missing ❌
+  c. Calculate keyword match score: [N]/10
+  d. For each missing keyword, suggest WHERE in the resume to add it
+     and HOW to phrase it naturally
+
+STEP E3 — CONTENT QUALITY CHECK
+  a. BULLET ANALYSIS — For each experience section:
+     - Do bullets start with action verbs? ✅ / ❌
+     - Do bullets include outcomes or results? ✅ / ❌
+     - Are bullets specific or vague? (flag vague ones with examples of
+       how to improve them)
+     - Bullet count per role: flag if too few (<2) or too many (>6)
+
+  b. PROFESSIONAL SUMMARY — Is there one?
+     - Present and tailored to the role ✅
+     - Present but generic ⚠️ (suggest how to tailor)
+     - Missing ❌ (recommend adding one)
+
+  c. SKILLS SECTION — Does it exist and is it effective?
+     - Skills present and relevant to the role ✅
+     - Skills present but not aligned with the JD ⚠️
+     - No skills section ❌
+
+  d. SECTION ORDER — Is it appropriate for the user's experience level?
+     - EIC with limited work experience: Education before Experience is
+       acceptable
+     - Experienced: Experience should come first
+     Flag if the order seems wrong for their level
+
+STEP E4 — ATS SCORE
+Combine the results into an overall ATS readiness score:
+
+  🟢 GREEN (likely to pass ATS screening)
+  Criteria: keyword match 8-10/10, format scan all ✅, bullets are
+  action-verb-led with outcomes
+
+  🟡 YELLOW (may pass but at risk)
+  Criteria: keyword match 5-7/10, minor format issues (⚠️), some
+  bullets need strengthening
+
+  🔴 RED (likely to be filtered out)
+  Criteria: keyword match <5/10, format failures (❌), missing sections,
+  vague bullets without outcomes
+
+Present the score as:
+
+  "ATS READINESS: [🟢/🟡/🔴] [GREEN/YELLOW/RED]
+
+  Format:    [✅/⚠️/❌] [summary]
+  Keywords:  [N]/10 matched
+  Content:   [✅/⚠️/❌] [summary]
+  Overall:   [1-2 sentence assessment]"
+
+STEP E5 — RECOMMENDATIONS
+Provide a prioritized list of changes, ranked by impact:
+
+  HIGH IMPACT (do these first):
+  1. [specific, actionable change]
+  2. [specific, actionable change]
+
+  MEDIUM IMPACT (strengthen your application):
+  3. [specific, actionable change]
+
+  LOW IMPACT (nice to have):
+  4. [specific, actionable change]
+
+Each recommendation must be SPECIFIC — not "add more keywords" but
+"Add 'data analysis' to your Skills section and incorporate 'stakeholder
+communication' into your second bullet under [role name]."
+
+STEP E6 — NEXT STEPS
+Offer the user clear paths forward:
+
+  "Here's what I recommend:
+
+  1. Apply the high-impact changes above to your resume
+  2. [If keyword score < 7] Consider whether this role is a strong fit —
+     low keyword overlap may mean the role requires different experience
+  3. [If they want a fresh start] I can build you a new ATS-optimized
+     resume from scratch — just provide your Experience Profile (YAML file)
+     and I'll generate one tailored to this job. If you don't have a YAML
+     profile yet, use the Experience Capture prompt or the Experience from
+     Resume prompt to create one.
+
+  Would you like me to help with any of these?"
 ```
 
 ---
@@ -232,5 +391,7 @@ a markdown version (for formatting in a document editor).
 - **Don't include everything** — a focused resume beats a comprehensive one. Your YAML file preserves everything; the resume shows only what matters for *this* role.
 - **Iterate** — run this prompt multiple times for different jobs. Each resume should look different.
 - **Gaps are okay** — an honest resume that shows strong partial fit beats a padded one that falls apart in interviews.
+- **Already have a resume?** Upload it instead of a YAML profile and this prompt will switch to ATS Evaluation mode — scoring your resume's format, keyword match, and content quality against the job description.
+- **Want to convert your resume to a YAML profile?** Use the [Experience from Resume prompt](experience-from-resume.md) to extract your experiences into the portable YAML format, then come back here for tailored resume generation.
 - **Got feedback?** Use the [Feedback & Revision prompt](feedback-revision.md)
   to apply mentor or peer feedback systematically.

@@ -88,6 +88,13 @@ RULES:
    e. GAPS — requirements the user doesn't clearly meet. The letter should
       NOT claim these. Instead, note how to frame growth potential or
       adjacent skills honestly.
+   f. INTERNATIONAL CONTEXT CHECK — Scan the profile for institutions,
+      organizations, or credentials that may not be recognized by reviewers
+      in the target country. List each one with a proposed appositive
+      phrase that will be applied on first mention in the letter body
+      (see Rule 7). Example: "Mathari National Teaching & Referral Hospital
+      → , Kenya's largest psychiatric referral hospital,". Skip this check
+      when the applicant is applying within their home country.
 
 2. LETTER STRUCTURE
    Use standard business letter format:
@@ -183,7 +190,43 @@ RULES:
      build a bridge narrative: "My work in [old field] taught me [skill],
      which directly applies to [new field]."
 
-7. TONE APPLICATION
+7. INTERNATIONAL APPLICANT CONTEXT
+   When an institution, organization, or credential in the profile may not
+   be recognized by reviewers in the target country, add a brief
+   contextualizing phrase on FIRST mention only. Because cover letters are
+   narrative, render the phrase as an APPOSITIVE inside a sentence — not a
+   parenthetical block.
+   - Trigger when the application crosses borders. Signals: non-US/UK/EU
+     institutions in the profile, cross-border target_industries, or a
+     work_authorization field indicating sponsorship or visa needs.
+   - Keep the appositive short (max ~6 words). Lead with what makes the
+     institution credible (size, type, reputation) — not history or
+     marketing language.
+   - First mention only. Subsequent mentions use the name alone.
+   - SKIP for globally recognizable names (Harvard, Oxford, UN agencies,
+     Fortune 500 companies) and when the applicant is applying within
+     their home country.
+   - Apply the same convention to local currencies (e.g., "a BDT 600,000
+     budget (about USD 5,500)") and country-specific credentials.
+   - For organizations with non-English abbreviations, spell out the full
+     name on first mention; the abbreviation may follow in parentheses
+     before the appositive. Example: "At Ain o Salish Kendra (ASK), a
+     Bangladeshi human-rights legal-aid NGO, I drafted..."
+   - The contextualization is FACTUAL, not promotional. Use neutral
+     descriptors a reviewer can independently verify.
+   - The appositive must NOT disrupt the narrative flow. If a sentence
+     becomes unwieldy with the context phrase inserted, restructure the
+     sentence rather than skip the context.
+
+   Examples (first mention in letter body):
+   - "At Mathari National Teaching & Referral Hospital, Kenya's largest
+     psychiatric facility, I completed 480 supervised clinical hours..."
+   - "My work at the Centre for Policy Dialogue, a leading Bangladeshi
+     policy think tank, taught me..."
+   - "As a research assistant at North South University, one of
+     Bangladesh's leading private research universities, I..."
+
+8. TONE APPLICATION
    Apply the selected tone consistently:
 
    Professional:
@@ -213,7 +256,7 @@ RULES:
      shaped my commitment to accessible care — a commitment I see
      reflected in your organization's outreach model."
 
-8. AFTER GENERATING THE LETTER
+9. AFTER GENERATING THE LETTER
    a. Present the letter in CLEAN PLAIN TEXT first (for pasting into
       application portals), then offer a formatted MARKDOWN version.
 

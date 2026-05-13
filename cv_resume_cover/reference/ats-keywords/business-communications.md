@@ -19,18 +19,30 @@
 - Marketing Analytics
 - Audience Segmentation
 - Content Calendar Management
+- Short-Form Video / TikTok Strategy
+- Influencer Marketing
+- Account-Based Marketing (ABM)
+- First-Party Data Strategy
+- Customer Data Platform (CDP) Management
+- Generative AI for Marketing
+- Marketing Automation
+- Privacy-First / Cookieless Marketing
 
 **Tools**
 - HubSpot, Marketo, Pardot
-- Google Analytics, Google Ads, Google Search Console
-- Hootsuite, Sprout Social, Buffer
+- Google Analytics (GA4), Google Ads, Google Search Console
+- Sprout Social, Buffer, Hootsuite
 - Mailchimp, Constant Contact, Klaviyo
+- Iterable, Braze (Cross-Channel Automation)
 - Canva, Adobe Creative Suite (Photoshop, Illustrator, InDesign)
 - WordPress, Squarespace, Webflow
 - SEMrush, Ahrefs, Moz
 - Meta Ads Manager, LinkedIn Campaign Manager
+- TikTok Ads Manager, YouTube Shorts
+- Segment, Twilio CDP, Tealium (Customer Data Platforms)
+- Jasper, Copy.ai, ChatGPT (AI Content Generation)
 - Microsoft Office / Google Workspace
-- Asana, Monday.com, Trello
+- Asana, Monday.com, Trello, Linear
 
 **Outcomes**
 - Increased Website Traffic
@@ -61,16 +73,22 @@
 - Cash Flow Management
 - Risk Assessment
 - Regulatory Compliance (GAAP, IFRS, SOX)
+- ESG Reporting
+- Climate-Related Financial Disclosure (TCFD, CSRD, SEC Climate Rules)
+- FP&A (Financial Planning & Analysis)
+- Treasury Management
+- Scenario & Sensitivity Analysis
+- Cost Accounting
 
 **Tools**
-- Excel (Advanced: VLOOKUP, Pivot Tables, Macros)
+- Excel (Advanced: VLOOKUP, XLOOKUP, Pivot Tables, Power Query, Macros)
 - QuickBooks, Sage, Xero
 - SAP, Oracle ERP, NetSuite
-- Bloomberg Terminal, Capital IQ
+- Bloomberg Terminal, Capital IQ, PitchBook
 - Tableau, Power BI (Financial Dashboards)
 - Microsoft Office / Google Workspace
 - Workday, ADP (Payroll)
-- Adaptive Insights, Anaplan
+- Adaptive Insights, Anaplan, OneStream
 - BlackLine, FloQast
 - SQL, Python (Financial Analysis)
 
@@ -103,11 +121,20 @@
 - Employment Law Compliance
 - Workforce Planning
 - Employee Engagement
+- Skills-Based Hiring
+- People Analytics
+- Pay Transparency
+- Internal Mobility
+- Total Rewards Strategy
+- Hybrid & Flexible Work Policies
+- Skills Taxonomy & Workforce Intelligence
+- AI in HR (Responsible Use)
 
 **Tools**
-- Workday, BambooHR, ADP
-- Greenhouse, Lever, iCIMS (ATS)
+- Workday, BambooHR, ADP, Rippling, HiBob
+- Greenhouse, Lever, iCIMS, Ashby (ATS)
 - LinkedIn Recruiter
+- Eightfold AI, Beamery (AI Talent Platforms)
 - UKG (Kronos), Paycom
 - Microsoft Office / Google Workspace
 - SurveyMonkey, Culture Amp, Qualtrics
@@ -144,6 +171,10 @@
 - Internal Communications
 - Influencer Relations
 - Corporate Social Responsibility (CSR)
+- ESG Communications
+- DEI Communications
+- Misinformation Response
+- Podcast & Audio PR
 - Message Development & Framing
 
 **Tools**
@@ -187,6 +218,13 @@
 - Presentation & Executive Communication
 - Problem Structuring & Hypothesis Testing
 - Project Management
+- Digital Transformation
+- AI Strategy & GenAI Transformation
+- Sustainability / ESG Strategy
+- Workforce Transformation
+- Mergers & Acquisitions (M&A) Support
+- Cost Optimization
+- Operating Model Design
 
 **Tools**
 - Microsoft PowerPoint, Google Slides

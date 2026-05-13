@@ -19,11 +19,17 @@
 - Standard Operating Procedures (SOPs)
 - Medical Terminology
 - Literature Review & Synthesis
+- Decentralized Clinical Trials (DCT)
+- Real-World Evidence (RWE) & Real-World Data (RWD)
+- Patient-Reported Outcomes (PRO)
+- Risk-Based Monitoring
+- Pragmatic Trials
 
 **Tools**
 - REDCap, Medidata Rave, Oracle Clinical
 - Electronic Data Capture (EDC) Systems
 - CTMS (Clinical Trial Management Systems)
+- Medable, THREAD (Decentralized Trial Platforms)
 - SPSS, SAS, Stata, R
 - Microsoft Office / Google Workspace
 - PubMed, ClinicalTrials.gov
@@ -61,6 +67,11 @@
 - Cultural Competency
 - Health Equity & Disparities Research
 - Grant Writing
+- Climate and Health
+- Pandemic Preparedness & Emergency Response
+- Genomic Surveillance
+- One Health Framework
+- Global Health
 
 **Tools**
 - SAS, R, Stata, SPSS
@@ -94,6 +105,11 @@
 - Clinical Assessment & Diagnosis
 - Evidence-Based Treatment Planning
 - Cognitive Behavioral Therapy (CBT)
+- Dialectical Behavior Therapy (DBT)
+- Acceptance and Commitment Therapy (ACT)
+- EMDR (Eye Movement Desensitization and Reprocessing)
+- Measurement-Based Care (MBC)
+- Collaborative Care Model
 - Crisis Intervention
 - Trauma-Informed Care
 - Group Therapy Facilitation
@@ -107,12 +123,12 @@
 **Tools**
 - Electronic Health Records (EHR): Epic, Cerner, TherapyNotes
 - DSM-5-TR
-- PHQ-9, GAD-7, PCL-5 (Screening Tools)
+- PHQ-9, GAD-7, PCL-5, C-SSRS (Screening Tools)
 - SimplePractice, TheraNest
 - Telehealth Platforms (Zoom, Doxy.me)
 - SPSS, R (Outcomes Research)
 - Microsoft Office / Google Workspace
-- BetterHelp, Talkspace (Platform Familiarity)
+- BetterHelp, Talkspace, Lyra, Spring Health (Digital Mental Health Platforms)
 - ASAM Criteria (Substance Use)
 - Outcome Measures (OQ-45, DASS-21)
 
@@ -143,8 +159,13 @@
 - Product Management (Health Tech)
 - User Experience (UX) for Healthcare
 - Population Health Management
-- Medical Device Software
-- Regulatory Compliance (FDA Software)
+- Medical Device Software (SaMD - Software as a Medical Device)
+- Regulatory Compliance (FDA Software, 21st Century Cures Act)
+- Clinical AI & Ambient Documentation
+- Digital Therapeutics (DTx)
+- Remote Patient Monitoring (RPM)
+- Generative AI for Healthcare
+- AI/ML in Clinical Decision Support
 
 **Tools**
 - Epic, Cerner, Allscripts, athenahealth
@@ -157,6 +178,9 @@
 - Salesforce Health Cloud
 - Snowflake, Databricks
 - Docker, Kubernetes (Health Infrastructure)
+- Nuance DAX, Abridge, Suki AI (Ambient Clinical Documentation)
+- DeepScribe, Glass Health, Hippocratic AI (Clinical AI)
+- OpenAI / Anthropic APIs (Healthcare Applications)
 
 **Outcomes**
 - Improved Clinical Workflow Efficiency
@@ -187,6 +211,12 @@
 - Bioinformatics
 - Flow Cytometry
 - Chromatography (HPLC, GC-MS)
+- Next-Generation Sequencing (NGS)
+- Single-Cell Sequencing
+- CRISPR / Gene Editing
+- Spatial Transcriptomics
+- Cryo-Electron Microscopy (Cryo-EM)
+- Long-Read Sequencing
 
 **Tools**
 - GraphPad Prism, ImageJ, FIJI
@@ -199,6 +229,9 @@
 - Microsoft Office / Google Workspace
 - PubMed, Google Scholar
 - AutoCAD, SolidWorks (Biomedical Engineering)
+- Oxford Nanopore, PacBio (Long-Read Sequencing)
+- Seurat, Scanpy (Single-Cell Analysis)
+- 10x Genomics (Single-Cell / Spatial)
 
 **Outcomes**
 - Published Peer-Reviewed Research

@@ -19,17 +19,26 @@
 - Technical Documentation
 - Microservices Architecture
 - Continuous Integration / Continuous Deployment (CI/CD)
+- Site Reliability Engineering (SRE)
+- Platform Engineering
+- Event-Driven Architecture
+- Serverless Architecture
+- GitOps
+- Infrastructure as Code (IaC)
 
 **Tools**
 - Git / GitHub / GitLab
-- Python, Java, JavaScript, TypeScript, C#
-- React, Angular, Vue.js
-- Node.js, Django, Spring Boot
+- Python, Java, JavaScript, TypeScript, C#, Rust, Go
+- React, Angular, Vue.js, Next.js, Svelte / SvelteKit
+- Node.js, Django, FastAPI, Spring Boot
 - Docker, Kubernetes
-- Jenkins, GitHub Actions
-- PostgreSQL, MongoDB, MySQL
-- REST APIs, GraphQL
-- VS Code, IntelliJ IDEA
+- Jenkins, GitHub Actions, ArgoCD (GitOps)
+- PostgreSQL, MongoDB, MySQL, Redis
+- REST APIs, GraphQL, gRPC
+- Vite, Webpack (Build Tools); pnpm, bun (Package Managers)
+- Cypress, Playwright (E2E Testing); Jest, Pytest (Unit Testing)
+- Terraform, Pulumi (Infrastructure as Code)
+- VS Code, JetBrains IDEs (IntelliJ, PyCharm, GoLand)
 - AWS, Azure, Google Cloud Platform (GCP)
 
 **Outcomes**
@@ -43,6 +52,50 @@
 - Reduced Technical Debt
 - Enhanced User Satisfaction
 - Scalable Architecture
+
+---
+
+### AI / ML Engineering
+
+**Skills**
+- Generative AI Integration
+- Large Language Models (LLMs)
+- Retrieval-Augmented Generation (RAG)
+- Prompt Engineering
+- Fine-Tuning & Model Adaptation
+- Vector Embeddings & Similarity Search
+- AI Safety & Responsible AI
+- MLOps & Model Deployment
+- Feature Engineering
+- Model Evaluation & Benchmarking
+- AI Agent Development
+- Multi-Modal AI (Vision, Audio, Text)
+
+**Tools**
+- OpenAI API, Anthropic Claude API, Google Gemini API
+- Hugging Face Transformers, Datasets
+- LangChain, LlamaIndex, Haystack
+- Pinecone, Weaviate, Chroma, Qdrant (Vector Databases)
+- MLflow, Weights & Biases, Comet (Experiment Tracking)
+- AWS Bedrock, Azure OpenAI Service, Google Vertex AI
+- TensorFlow, PyTorch, JAX
+- Ollama, vLLM, llama.cpp (Local Inference)
+- Streamlit, Gradio (AI Demos)
+- Pydantic, FastAPI (AI Service Backends)
+- Ray, Dask (Distributed Compute)
+- DSPy (Programming with LLMs)
+
+**Outcomes**
+- Deployed Production LLM Applications
+- Reduced Model Inference Latency
+- Improved Model Accuracy / F1 Score
+- Lowered AI Operating Costs (Token / Compute)
+- Successful RAG Implementation
+- Reduced Hallucination Rate
+- Achieved Safety Evaluation Benchmarks
+- Scaled AI Services to Production Load
+- Improved Model Fine-Tuning Outcomes
+- Established AI Governance & Guardrails
 
 ---
 
@@ -61,18 +114,26 @@
 - Business Intelligence
 - Natural Language Processing (NLP)
 - Quantitative Research
+- Generative AI for Analytics
+- Time Series Analysis
+- Causal Inference
+- Real-Time Streaming Analytics
 
 **Tools**
 - SQL, Python, R
-- Tableau, Power BI, Looker
-- Pandas, NumPy, Scikit-learn
+- Tableau, Power BI, Looker, Looker Studio
+- Pandas, NumPy, Scikit-learn, Polars
 - Apache Spark, Hadoop
 - Jupyter Notebook
-- Snowflake, BigQuery, Redshift
+- Snowflake, BigQuery, Redshift, Databricks
+- DuckDB (Modern Analytics)
+- Apache Iceberg, Delta Lake (Open Table Formats)
 - TensorFlow, PyTorch
-- Excel (Advanced), Google Sheets
-- Airflow, dbt
-- AWS SageMaker, Azure ML
+- Excel (Advanced: VLOOKUP, XLOOKUP, Pivot Tables, Power Query)
+- Google Sheets
+- Airflow, dbt, Dagster
+- Airbyte, Fivetran (ETL / ELT)
+- AWS SageMaker, Azure ML, Google Vertex AI
 
 **Outcomes**
 - Data-Driven Decision Making
@@ -100,21 +161,24 @@
 - Product Roadmapping
 - Interaction Design
 - Accessibility (WCAG) Compliance
-- Design Systems
+- Design Systems & Design Tokens
 - Journey Mapping
+- Service Design
+- Inclusive Design
+- AI-Augmented Design Workflows
 - Stakeholder Management
 
 **Tools**
 - Figma, Sketch, Adobe XD
 - InVision, Miro, FigJam
-- Jira, Asana, Trello
+- Jira, Asana, Trello, Linear
 - Google Analytics, Hotjar, FullStory
 - UserTesting, Maze
 - HTML, CSS (prototyping-level)
 - Confluence, Notion
-- Amplitude, Mixpanel
+- Amplitude, Mixpanel, Pendo
 - Balsamiq
-- Zeplin, Abstract
+- Zeplin
 
 **Outcomes**
 - Improved User Satisfaction Scores
@@ -142,21 +206,27 @@
 - Disaster Recovery Planning
 - Active Directory / LDAP
 - Scripting & Automation
-- Performance Monitoring
+- Performance Monitoring & Observability
 - Configuration Management
+- GitOps Workflows
+- Zero Trust Architecture
+- FinOps (Cloud Cost Optimization)
 - Help Desk / Technical Support
 
 **Tools**
 - AWS, Azure, Google Cloud Platform
 - VMware, Hyper-V
 - Linux, Windows Server
-- Terraform, Ansible, Puppet
+- Terraform, Ansible, Puppet, Pulumi
 - ServiceNow, Zendesk
 - Splunk, Nagios, Datadog
+- Prometheus, Grafana (Observability)
+- ArgoCD, Flux (GitOps)
+- Istio, Linkerd (Service Mesh)
 - Cisco, Juniper (Networking)
 - PowerShell, Bash
 - SCCM, Intune
-- Office 365 Administration
+- Microsoft 365 / Office 365 Administration
 
 **Outcomes**
 - Improved System Uptime
@@ -187,18 +257,27 @@
 - Endpoint Protection
 - Security Awareness Training
 - Governance, Risk & Compliance (GRC)
+- Zero Trust Architecture
+- DevSecOps & Secure SDLC
+- Cloud Security Posture Management (CSPM)
+- Endpoint Detection & Response (EDR / XDR)
+- Software Bill of Materials (SBOM)
+- Supply Chain Security
+- AI / ML Security
 
 **Tools**
-- Splunk, QRadar, Sentinel
+- Splunk, QRadar, Microsoft Sentinel
 - Nessus, Qualys, OpenVAS
 - Wireshark, Burp Suite, Metasploit
-- CrowdStrike, Carbon Black
-- Okta, Azure AD, CyberArk
+- CrowdStrike, Carbon Black, SentinelOne (EDR / XDR)
+- Okta, Microsoft Entra ID (Azure AD), CyberArk
 - Nmap, Kali Linux
 - Palo Alto, Fortinet
 - OWASP ZAP
 - KnowBe4
 - Snort, Suricata
+- Snyk, Dependabot (DevSecOps / Supply Chain)
+- Wiz, Lacework, Prisma Cloud (CSPM)
 
 **Outcomes**
 - Reduced Security Incidents
